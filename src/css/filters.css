@@ -1,0 +1,50 @@
+.quote-filters {
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    max-width: 400px;
+    background: #fefefe;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.quote-filters legend {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.quote-filters label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+}
+
+.quote-filters input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.4rem;
+    accent-color: var(--text-primary);
+    cursor: pointer;
+}
+
+.quote-filters label:hover {
+    color: var(--text-primary);
+}
+
+@keyframes checkBounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+}
+
+.quote-filters input[type="checkbox"]:checked {
+    animation: checkBounce 0.3s ease;
+}
